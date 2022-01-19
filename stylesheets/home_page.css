@@ -4,7 +4,7 @@
 }
 html,
 body {
-  min-height: 1075px;
+  min-height: 1575px;
   min-width: 100%;
   margin: 0;
   padding: 0;
@@ -78,7 +78,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  height: 1000px;
+  height: 1500px;
   width: 100%;
 }
 #homepage-content {
