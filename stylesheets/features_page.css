@@ -1,6 +1,6 @@
 #features-main-div {
   padding: 10px;
-  height: 1000px;
+  min-height: 1500px;
 }
 #heading-text {
   padding-top: 30px;
@@ -16,7 +16,7 @@
   margin: 0 30px;
   border-radius: 10px;
   /* opacity: 0.75; */
-  height: 850px;
+  min-height: 1050px;
 }
 #features-card-flex {
   margin: 10px;
