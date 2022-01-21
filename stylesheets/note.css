@@ -1,0 +1,65 @@
+*::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+  height: 0px;
+}
+body {
+  background-image: url("../image_assets/bg_flipped.jpg");
+}
+#heading-text {
+  padding-top: 30px;
+  padding-left: 20px;
+  font-family: "Comic Neue";
+  font-size: 60px;
+  font-weight: bold;
+  height: 100px;
+}
+#color-pallete {
+  margin: auto;
+  max-width: 80%;
+  height: 75px;
+  background-color: black;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  overflow-y: scroll;
+}
+.color-circle {
+  height: 50px;
+  min-width: 50px;
+  margin: 12.5px;
+  background-color: white;
+  border-radius: 50%;
+}
+.aqua {
+  background-color: #00ffff;
+}
+.blue {
+  background-color: #0000ff;
+}
+.fuchsia {
+  background-color: #ff00ff;
+}
+.green {
+  background-color: #008000;
+}
+.lime {
+  background-color: #00ff00;
+}
+.maroon {
+  background-color: #800000;
+}
+.purple {
+  background-color: #800080;
+}
+.red {
+  background-color: #ff0000;
+}
+.white {
+  background-color: white;
+}
+.yellow {
+  background-color: #ffff00;
+}
