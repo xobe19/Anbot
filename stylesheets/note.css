@@ -14,9 +14,16 @@ body {
   font-weight: bold;
   height: 100px;
 }
+.mid-text {
+  padding-top: 30px;
+  padding-left: 20px;
+  font-family: "Comic Neue";
+  font-size: 20px;
+  font-weight: bold;
+}
 #color-pallete {
   margin: auto;
-  max-width: 80%;
+  max-width: 95%;
   height: 75px;
   background-color: black;
   border-radius: 10px;
@@ -25,6 +32,7 @@ body {
   flex-wrap: nowrap;
   overflow-x: scroll;
   overflow-y: scroll;
+  padding: 5px;
 }
 .color-circle {
   height: 50px;
@@ -62,4 +70,24 @@ body {
 }
 .yellow {
   background-color: #ffff00;
+}
+.active-color {
+  background-color: grey;
+  border-radius: 10px;
+}
+#ta-aligner {
+  min-width: 95%;
+  min-height: 750px;
+  display: flex;
+  justify-content: center;
+}
+textarea {
+  min-height: 750px;
+  min-width: 92.5%;
+  background-color: black;
+  border-radius: 10px;
+  color: yellow;
+  font-family: "Comic Neue";
+  font-size: 30px;
+  padding: 15px;
 }
