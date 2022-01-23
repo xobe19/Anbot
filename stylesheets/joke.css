@@ -1,0 +1,15 @@
+body {
+  background-image: url("../image_assets/bg_flipped.jpg");
+}
+#homepage-content img {
+  width: 300px;
+}
+#homepage-content {
+  align-items: center;
+}
+#description-text {
+  display: none;
+}
+.button {
+  display: none;
+}
