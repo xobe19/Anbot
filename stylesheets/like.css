@@ -1,0 +1,75 @@
+body {
+  background-image: url("../image_assets/bg_flipped.jpg");
+}
+#homepage-content {
+  width: 100%;
+}
+#main-flex-container {
+  width: 90%;
+  margin: auto;
+  background-color: rgba(255, 165, 0, 0.75);
+  border-radius: 20px;
+  display: flex;
+  min-height: 800px;
+  padding: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#name-box {
+  /* background-color: pink; */
+  flex: 7;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+#name-box p {
+  font-family: "Comic Neue";
+  font-size: 50px;
+  margin: 20px;
+}
+.name_input {
+  display: block;
+  margin: 10px;
+  padding: 10px;
+  width: 300px;
+  height: 30px;
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  font-family: "Comic Neue";
+  font-size: 20px;
+  border: none;
+}
+#reaction-box {
+  background-color: lightblue;
+  flex: 3;
+  border-radius: 10px;
+}
+#calc-btn {
+  margin-left: auto;
+  margin-right: auto;
+  height: 60px;
+  font-size: 30px;
+  font-family: "Comic Neue";
+  min-width: 200px;
+  background: blue;
+  color: white;
+  border-radius: 60px;
+  border: none;
+}
+#reaction-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#reaction-img {
+  max-height: 400px;
+  max-width: 300px;
+  /* opacity: 0.5; */
+}
+#reaction-text {
+  font-size: 30px;
+  font-family: "Comic Neue";
+}

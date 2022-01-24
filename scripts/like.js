@@ -1,0 +1,70 @@
+let inp_a = document.getElementById("a_input");
+let inp_b = document.getElementById("b_input");
+let reaction_img = document.getElementById("reaction-img");
+let reaction_text = document.getElementById("reaction-text");
+let calc_btn = document.getElementById("calc-btn");
+
+
+
+async function calc(a, b) {
+    a = a.toLowerCase();
+    b = b.toLowerCase();
+    if(a == b) return "self";
+let gen_a, gen_b;
+await fetch("https://gender-api.com/get?name="+ a +"&key=" + api.key)
+.then((res) => res.json())
+.then((data) => {
+    gen_a = data.gender;
+});
+await fetch("https://gender-api.com/get?name="+ b +"&key=" + api.key)
+.then((res) => res.json())
+.then((data) => {
+    gen_b = data.gender;
+});
+
+if(gen_a == gen_b) {
+    return "gay";
+}
+else {
+ let rand =  Math.random();
+ if(rand <= 0.5) {
+     return "yes";
+ }
+ else return "no";
+}
+
+}
+
+
+
+calc_btn.addEventListener("click", async (e) => {
+  let text_a = inp_a.value;
+  let text_b = inp_b.value;
+  if(text_a != "" && text_b != "") {
+   reaction_img.style.filter = "brightness(100%)";   
+
+    let ans = await calc(text_a, text_b);
+    if(ans == "gay") {
+        reaction_text.innerHTML = "Oh My God! That's fucking gay";
+        reaction_img.setAttribute("src", "./image_assets/gg.png");
+    }
+    else if(ans == "yes") {
+      reaction_text.innerHTML = "Hmm..Yep! That sounds good"
+      reaction_img.setAttribute("src", "./image_assets/yes.png");
+    }
+    else if(ans == "no") {
+       reaction_text.innerHTML = "I'm sorry to say this, but.." 
+       reaction_img.setAttribute("src", "./image_assets/no.png");
+       reaction_img.style.filter = "brightness(50%)";
+    }
+    else {
+      reaction_text.innerHTML = "Don't mess with me!";
+      reaction_img.setAttribute("src", "./image_assets/self.png");
+    }
+  }
+  
+
+
+
+});
+
