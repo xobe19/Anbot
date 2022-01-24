@@ -5,6 +5,43 @@ let reaction_text = document.getElementById("reaction-text");
 let calc_btn = document.getElementById("calc-btn");
 
 
+function flame_calc(a, b) {
+  let mp_a = {};
+  let mp_b = {};
+  let fin_len = 0;
+  for(let x = 97; x <= 97+25; x++) {
+          let chr = String.fromCharCode(x);
+          mp_a[chr] = 0;
+          mp_b[chr] = 0;
+  }
+  for(let i = 0; i < a.length; i++) {
+    mp_a[a[i]]++;
+  }
+  for(let i = 0; i < a.length; i++) {
+    mp_b[b[i]]++;
+  }
+ for(let x = 97; x <= 97+25; x++) {
+          let chr = String.fromCharCode(x);
+         fin_len += (Math.max(mp_a[chr], mp_b[chr]) - Math.min(mp_a[chr], mp_b[chr]) );
+  }
+
+  fin_len--;
+  fin_len%=6;
+  let flames = "FLAMES";
+  let mp = {
+    "F": false,
+    "L": true,
+    "A": true,
+    "M": true,
+    "E": false,
+    "S": false
+  }
+  let fin_char = flames[fin_len];
+  return mp[fin_char];
+  
+   
+}
+
 
 async function calc(a, b) {
     a = a.toLowerCase();
@@ -26,11 +63,10 @@ if(gen_a == gen_b) {
     return "gay";
 }
 else {
- let rand =  Math.random();
- if(rand <= 0.5) {
-     return "yes";
- }
- else return "no";
+  if(flame_calc(a, b)) {
+    return "yes";
+  }
+  else return "no";
 }
 
 }
