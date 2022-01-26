@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./stylesheets/home_page.css" />
+    <link rel="stylesheet" href="./stylesheets/blockchain.css" />
+    <link rel="stylesheet" href="./stylesheets/mobile.css" />
+    <title>Anbot - The Serverless Bot</title>
+  </head>
+
+  <body>
+    <div id="nav-bar">
+      <div id="nav-bar-flex-container">
+        <div id="logo">
+          <img src="./image_assets/kyle_50x50.png" alt="anbot_logo" />
+          <div id="logo-text">
+            <p>Anbot, inc.</p>
+          </div>
+        </div>
+        <div id="feedback-btn" class="button">
+          <div id="feedback-btn-flx-cntr">
+            <p>Feedback</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="info-container">
+      <p id="info-title">How Does it work?</p>
+      <p id="info-desc">
+        Each bitcoin address is generated using a public/private key pair from
+        an Elliptic curve (secp256k1, to be precise). Which means each possible
+        bitcoin wallet has 2 parts , the wallet address(used to recieve
+        transactions) and the private key(used to send transactions). I can help
+        you generate a private/public key pair, and let you know if there's any
+        balance in it(Using blockchain API). Although it is EXTREMELY unlikely
+        that you stumble upon a wallet that has significant money, you can still
+        try your shot if you feel that your luck is through the roof.
+      </p>
+    </div>
+    <div id="tool-container">
+      <p id="tool-title">The Generator &rarr;</p>
+      <div id="priv-addr-container">
+        <input type="text" id="priv-key" placeholder="Private Key" />
+        <input type="text" id="wallet-addr" placeholder="Public Key" />
+      </div>
+      <div id="balance-container">
+        <p id="balance-val">
+          <span id="b">Balance: </span> <span id="btc-val">0 </span>BTC
+        </p>
+      </div>
+      <div id="generate-btn"><p>Generate!</p></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.js"></script>
+    <script src="//rawgit.com/weepy/brequire/master/require.js"></script>
+    <script src="./scripts/Base58.js"></script>
+    <script src="./scripts/blockchain.js"></script>
+  </body>
+</html>

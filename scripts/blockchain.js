@@ -1,3 +1,8 @@
+let pk = document.querySelector("#priv-key");
+let wa = document.querySelector("#wallet-addr");
+let val = document.querySelector("#btc-val");
+let btn = document.querySelector("#generate-btn");
+
 function genPubPriv() {
   let elliptic;
   elliptic =
@@ -46,5 +51,23 @@ function generateKey() {
   }
   result = Uint8Array.from(result);
   let walletAddr = Base58.encode(result);
-  return walletAddr;
+  return { privKey, walletAddr };
 }
+async function updateBal(walletAddr) {
+  fetch("https://blockchain.info/balance?active=" + walletAddr)
+    .then((res) => res.json())
+    .then((data) => {
+      let bal = data[walletAddr].final_balance + " ";
+      val.innerHTML = bal;
+    });
+}
+function gen() {
+  let { privKey, walletAddr } = generateKey();
+  pk.value = privKey;
+  wa.value = walletAddr;
+  val.innerHTML = "...";
+  updateBal(walletAddr);
+}
+btn.addEventListener("click", (e) => {
+  gen();
+});
