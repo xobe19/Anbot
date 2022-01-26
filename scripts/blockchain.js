@@ -61,13 +61,13 @@ async function updateBal(walletAddr) {
       val.innerHTML = bal;
     });
 }
-function gen() {
+async function gen() {
   let { privKey, walletAddr } = generateKey();
+  await updateBal(walletAddr);
   pk.value = privKey;
   wa.value = walletAddr;
-  val.innerHTML = "...";
-  updateBal(walletAddr);
 }
 btn.addEventListener("click", (e) => {
+  val.innerHTML = "...";
   gen();
 });

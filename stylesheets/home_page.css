@@ -28,6 +28,9 @@ body {
   height: 75px;
   display: inline-block;
 }
+#logo:hover {
+  cursor: pointer;
+}
 #logo img {
   margin: 12.5px;
   display: inline-block;
@@ -61,6 +64,7 @@ body {
 #feedback-btn:hover {
   background: orange;
   color: white;
+  cursor: pointer;
 }
 #feedback-btn-flx-cntr {
   display: flex;
@@ -87,6 +91,7 @@ body {
   justify-content: flex-start;
   height: 1000px;
   width: 500px;
+  padding: 35px;
 }
 #main-text {
   margin: 50px;
@@ -122,4 +127,7 @@ body {
 #main-button-div {
   display: flex;
   justify-content: center;
+}
+.button:hover {
+  cursor: pointer;
 }

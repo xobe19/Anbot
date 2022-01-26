@@ -1,58 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./stylesheets/home_page.css" />
+    <link rel="stylesheet" href="./stylesheets/joke.css" />
+    <link rel="stylesheet" href="./stylesheets/mobile.css" />
+    <title>Anbot - The Serverless Bot</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./stylesheets/home_page.css" />
-  <link rel="stylesheet" href="./stylesheets/joke.css" />
-  <link rel="stylesheet" href="./stylesheets/mobile.css" />
-  <title>Anbot - The Serverless Bot</title>
-</head>
-
-<body>
-  <div id="nav-bar">
-    <div id="nav-bar-flex-container">
-      <div id="logo">
-        <img src="./image_assets/kyle_50x50.png" alt="anbot_logo" />
-        <div id="logo-text">
-          <p>Anbot, inc.</p>
+  <body>
+    <div id="nav-bar">
+      <div id="nav-bar-flex-container">
+        <div id="logo">
+          <img src="./image_assets/kyle_50x50.png" alt="anbot_logo" />
+          <div id="logo-text">
+            <p>Anbot, inc.</p>
+          </div>
         </div>
-      </div>
-      <div id="feedback-btn" class="button">
-        <div id="feedback-btn-flx-cntr">
-          <p>Feedback</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="homepage-flex-container">
-    <div id="homepage-content">
-      <br />
-      <br />
-      <img id="main-img" src="./image_assets/kyle_think_final.png" alt="Anbot Says Hi" />
-      <div id="main-text">
-        <p>Thinking</p>
-      </div>
-      <div id="description-text">
-        <p></p>
-      </div>
-      <br />
-      <div id="main-button-div">
-        <div class="button" id="get-started-btn">
-          <div id="get-started-btn-flx-cntr">
-            <p>Do it Again!</p>
+        <div id="feedback-btn" class="button">
+          <div id="feedback-btn-flx-cntr">
+            <p>Feedback</p>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <script src="./scripts/joke.js"></script>
-</body>
 
+    <div id="homepage-flex-container">
+      <div id="homepage-content">
+        <br />
+        <br />
+        <img
+          id="main-img"
+          src="./image_assets/kyle_think_final.png"
+          alt="Anbot Says Hi"
+        />
+        <div id="main-text">
+          <p>Thinking</p>
+        </div>
+        <div id="description-text">
+          <p></p>
+        </div>
+        <br />
+        <div id="main-button-div">
+          <div class="button" id="get-started-btn">
+            <div id="get-started-btn-flx-cntr">
+              <p>Do it Again!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./scripts/joke.js"></script>
+    <script src="./scripts/button.js"></script>
+    <script>
+      document
+        .getElementById("get-started-btn-flx-cntr")
+        .addEventListener("click", () => {
+          window.location.href = "/joke.html";
+        });
+    </script>
+  </body>
 </html>

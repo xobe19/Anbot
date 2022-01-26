@@ -39,6 +39,7 @@ body {
 .features-card:hover {
   filter: invert(100%);
   background-color: #0b167b;
+  cursor: pointer;
 }
 .features-card-item {
   width: 300px;

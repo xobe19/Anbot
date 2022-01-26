@@ -58,6 +58,9 @@ body {
   border-radius: 60px;
   border: none;
 }
+#calc-btn:hover {
+  cursor: pointer;
+}
 #reaction-box {
   display: flex;
   flex-direction: column;

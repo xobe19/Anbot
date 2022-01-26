@@ -42,6 +42,9 @@ body {
   border-radius: 50%;
   transition: 100ms;
 }
+.color-circle:hover {
+  cursor: pointer;
+}
 .aqua {
   background-color: #00ffff;
 }

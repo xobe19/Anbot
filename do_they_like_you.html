@@ -1,59 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./stylesheets/home_page.css" />
+    <link rel="stylesheet" href="./stylesheets/like.css" />
+    <link rel="stylesheet" href="./stylesheets/mobile.css" />
+    <title>Anbot - The Serverless Bot</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./stylesheets/home_page.css" />
-  <link rel="stylesheet" href="./stylesheets/like.css">
-  <link rel="stylesheet" href="./stylesheets/mobile.css" />
-  <title>Anbot - The Serverless Bot</title>
-</head>
-
-<body>
-  <div id="nav-bar">
-    <div id="nav-bar-flex-container">
-      <div id="logo">
-        <img src="./image_assets/kyle_50x50.png" alt="anbot_logo" />
-        <div id="logo-text">
-          <p>Anbot, inc.</p>
+  <body>
+    <div id="nav-bar">
+      <div id="nav-bar-flex-container">
+        <div id="logo">
+          <img src="./image_assets/kyle_50x50.png" alt="anbot_logo" />
+          <div id="logo-text">
+            <p>Anbot, inc.</p>
+          </div>
         </div>
-      </div>
-      <div id="feedback-btn" class="button">
-        <div id="feedback-btn-flx-cntr">
-          <p>Feedback</p>
+        <div id="feedback-btn" class="button">
+          <div id="feedback-btn-flx-cntr">
+            <p>Feedback</p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div id="homepage-flex-container">
-    <div id="homepage-content">
-    
+    <div id="homepage-flex-container">
+      <div id="homepage-content">
         <div id="main-flex-container">
-            <div id="name-box">
-                <p id="heading-text">I still need to know the names though</p>
-                <input type="text" id="a_input" class = "name_input" placeholder="Person A">
-                <input type="text" id = "b_input" class = "name_input" placeholder="Person B">
-                <button id="calc-btn">
-                    Calculate!
-                </button>
-            </div>
-            <div id="reaction-box">
-<img src="./image_assets/kyle_think_final.png" alt="Reaction image" id="reaction-img">
-<p id="reaction-text"></p>
-            </div>
+          <div id="name-box">
+            <p id="heading-text">I still need to know the names though</p>
+            <input
+              type="text"
+              id="a_input"
+              class="name_input"
+              placeholder="Person A"
+            />
+            <input
+              type="text"
+              id="b_input"
+              class="name_input"
+              placeholder="Person B"
+            />
+            <button id="calc-btn">Calculate!</button>
+          </div>
+          <div id="reaction-box">
+            <img
+              src="./image_assets/kyle_think_final.png"
+              alt="Reaction image"
+              id="reaction-img"
+            />
+            <p id="reaction-text"></p>
+          </div>
         </div>
-
-     
+      </div>
     </div>
-  </div>
-  <script src="./api_keys.js"></script>
-  <script  src="./scripts/like.js"></script>
-</body>
-
+    <script src="./api_keys.js"></script>
+    <script src="./scripts/like.js"></script>
+    <script src="./scripts/button.js"></script>
+  </body>
 </html>
