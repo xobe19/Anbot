@@ -91,7 +91,7 @@ body {
   justify-content: flex-start;
   height: 1000px;
   width: 500px;
-  padding: 35px;
+  padding-top: 35px;
 }
 #main-text {
   margin: 50px;

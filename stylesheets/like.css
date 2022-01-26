@@ -1,8 +1,11 @@
 body {
   background-image: url("../image_assets/bg_flipped.jpg");
 }
+html,
 #homepage-content {
   width: 100%;
+  padding: 0;
+  border: none;
 }
 #main-flex-container {
   width: 90%;
