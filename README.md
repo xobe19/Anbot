@@ -8,6 +8,8 @@ Do you think Serverless static websites are boring? Meet [Anbot.](https://xobe19
 
 
 ## Features: 
+![image](https://user-images.githubusercontent.com/79440952/151290398-2707172e-7024-4a67-89e5-8a0f979391f6.png)
+
 1) Responsive 
 2) Saving notes locally (using browser cookies)
 3) Bitcoin wallet generator & checker (using blockchain.info API)
