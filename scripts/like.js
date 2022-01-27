@@ -69,21 +69,22 @@ calc_btn.addEventListener("click", async (e) => {
   let text_a = inp_a.value;
   let text_b = inp_b.value;
   if (text_a != "" && text_b != "") {
-    reaction_img.style.filter = "brightness(100%)";
-
     let ans = await calc(text_a, text_b);
     if (ans == "gay") {
       reaction_text.innerHTML = "Oh My God! That's fucking gay";
+      reaction_img.setAttribute("src", "");
       reaction_img.setAttribute("src", "./image_assets/gg.png");
     } else if (ans == "yes") {
       reaction_text.innerHTML = "Hmm..Yep! That sounds good";
+      reaction_img.setAttribute("src", "");
       reaction_img.setAttribute("src", "./image_assets/yes.png");
     } else if (ans == "no") {
       reaction_text.innerHTML = "I'm sorry to say this, but..";
+      reaction_img.setAttribute("src", "");
       reaction_img.setAttribute("src", "./image_assets/no.png");
-      reaction_img.style.filter = "brightness(50%)";
     } else {
       reaction_text.innerHTML = "Don't mess with me!";
+      reaction_img.setAttribute("src", "");
       reaction_img.setAttribute("src", "./image_assets/self.png");
     }
   }

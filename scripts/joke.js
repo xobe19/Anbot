@@ -13,8 +13,6 @@ fetch("https://backend-omega-seven.vercel.app/api/getjoke")
     joke_loaded = true;
     joke_text.parentElement.style.display = "block";
     button.style.display = "block";
-    img.setAttribute("src", "./image_assets/laughing.png")
+    img.setAttribute("src", "");
+    img.setAttribute("src", "./image_assets/laughing.png");
   });
-
-
-
